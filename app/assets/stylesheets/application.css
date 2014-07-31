@@ -12,7 +12,8 @@
  *
  *= require_tree .
  *= require_self
- *= require lib/jquery.fancybox.css
+ *= require jquery.fancybox.css
+ *= require jquery.fancybox-thumbs
  */
 
 .header {

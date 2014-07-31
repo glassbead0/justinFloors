@@ -5,6 +5,12 @@
 
 <div class="body">
 
- 
+
+  <%= @photos.each do |photo| %>
+  <%= link_to image_tag(photo.file.thumb('200x200#').url),
+       photo.file.remote_url,
+    class: 'fancybox', rel: 'group', title: photo.title, alt: 'Photo' %>'
+   <% end %>
+
 
 </div>
