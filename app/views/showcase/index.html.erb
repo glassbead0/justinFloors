@@ -1,16 +1,25 @@
+
+
 <div class="header">
-  <h1 class="title_link"><%= link_to 'Justin Floors Inc', root_path %></h1>
+    <br><h1 class="title_link"><%= link_to 'Justin Floors Inc', root_path %></h1>
   <h2>Showcase</h2>
 </div>
 
-<div class="body">
+<div class="b">
+
+  <%= link_to image_tag('wood_floor.jpg', size: '200x200'),
+    'images/wood_floor.JPG', class: 'fancybox', rel: 'group', title: 'wood floor', alt: 'Photo' %>
+
+  <%= link_to image_tag('stairs_wood.jpg', size: '200x200'),
+    'images/stairs_wood.JPG', class: 'fancybox', rel: 'group', title: 'stairs wood', alt: 'Photo' %>
 
 
-  <%= @photos.each do |photo| %>
-  <%= link_to image_tag(photo.file.thumb('200x200#').url),
+
+  <%# @photos.each do |photo| %>
+  <%# link_to image_tag(photo.file.thumb('200x200#').url),
        photo.file.remote_url,
     class: 'fancybox', rel: 'group', title: photo.title, alt: 'Photo' %>'
-   <% end %>
+   <%# end %>
 
 
 </div>
