@@ -1,4 +1,21 @@
 
+<script>
+$(document).ready(function() {
+  $('.fancybox').fancybox( {
+    autoScale: true,
+    type: 'iframe',
+    width: 500,
+    openEffect: 'elastic',
+    helpers: {
+      buttons: {},
+      thumbs: {
+      width: 50,
+      height: 50
+      }
+    }
+  });
+});
+</script>
 
 <div class="header">
     <br><h1 class="title_link"><%= link_to 'Justin Floors Inc', root_path %></h1>
@@ -8,11 +25,13 @@
 <div>
 
   <%= link_to image_tag('wood_1.JPG', size: '200x200'),
-    '/showcase/wood_1.JPG', class: 'fancybox', rel: 'group', title: 'wood floor', alt: 'Photo' %>
+    '/showcase/wood_1.JPG', class: 'fancybox', rel: 'wood', title: 'wood floor', alt: 'Photo' %>
 
-  <%= link_to image_tag('wood_2.JPG', size: '200x200'),
-    '/showcase/wood_2.JPG', class: 'fancybox', rel: 'group', title: 'stairs wood', alt: 'Photo' %>
+  <%= link_to image_tag('wood_3_stairs.JPG', size: '200x200'),
+    '/showcase/wood_3_stairs.JPG', class: 'fancybox', rel: 'wood', title: 'Stairs', alt: 'Photo' %>
 
+  <%= link_to image_tag('wood_4_stairs.JPG', size: '200x200'),
+    'wood_4_stairs.JPG', class: 'fancybox', rel: 'wood', title: 'Stairs', alt: 'Photo' %>
 
 
   <%# @photos.each do |photo| %>
