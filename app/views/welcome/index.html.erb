@@ -1,9 +1,28 @@
-<div class="header"><br><h1>Justin Floors Inc.</h1><br></div>
+<div class="header"><br><h1 id="company_name">Justin Floors Inc.</h1><br></div>
 
 
-<div class="footer">
+<div class="b">
+  <div class="boxes" id="about">
+    <h3 align="center">About Justin Floors</h3>
+    <p>Justin Glasenapp has x year working in the roaring fork valley selling quality flooring products...</p>
+    <%= link_to image_tag('justin_batman.JPG', size: '250x300', align: 'center'), '/about' %>
+  </div>
 
-  <%= link_to 'Contact', '/contact' %>
-  <%= link_to 'Photos' , '/showcase' %>
-  <%= link_to 'View Products', '/products' %>
+  <div class='boxes' id="showcase">
+    <h3 align="center">Showcase</h3>
+      <%= link_to image_tag('wood_5_kitchen.JPG', align: 'center', size: '220x220') , '/showcase' %>
+      <%= link_to image_tag('carpet_2.JPG', align: 'center', size: '220x220') , '/showcase' %>
+
+  </div>
+
+  <div class='boxes' id="contact">
+    <h3 align="center">Contact Justin Floors at:</h3>
+    <ul>
+      <li>phone: 970-618-2380</li>
+      <li>email: justintime6955@msn.com</li>
+    </ul>
+
+    <%= link_to 'Contact', '/contact' %>
+
+  </div>
 </div>

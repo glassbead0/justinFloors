@@ -30,10 +30,16 @@
 
 $(document).ready(function() {
   $('.fancybox').fancybox( {
+    autoScale: true,
     type: 'iframe',
+    width: 500,
+    openEffect: 'elastic',
     helpers: {
       buttons: {},
-      thumbs: {}
+      thumbs: {
+        width: 50,
+        height: 50
+      }
     }
   });
 });

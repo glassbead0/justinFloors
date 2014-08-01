@@ -22,6 +22,7 @@
   border-radius: 10px;
   font-family: garamond;
   text-decoration: none;
+  opacity: 0.7;
 
 }
 
@@ -36,9 +37,21 @@
   background: none;
 }
 
-.body {
-
+body {
+  background-image: url('wood_floor_wallpaper.JPG');
 }
+
+.boxes {
+  display: inline-block;
+  background-color: gray;
+  opacity: 0.9;
+  border-radius: 8px;
+  padding: 7px;
+  margin: 30px 70px;
+  width: 300px;
+  height: 500px;
+}
+
 
 .footer {
   position: absolute;
@@ -48,4 +61,5 @@
   height: 100px;   /* Height of the footer */
   background: #BBBBBB;
   border-radius: 10px;
+  opacity: 0.7
 }

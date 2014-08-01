@@ -5,20 +5,20 @@
   <h2>Showcase</h2>
 </div>
 
-<div class="b">
+<div>
 
-  <%= link_to image_tag('wood_floor.jpg', size: '200x200'),
-    'images/wood_floor.JPG', class: 'fancybox', rel: 'group', title: 'wood floor', alt: 'Photo' %>
+  <%= link_to image_tag('wood_1.JPG', size: '200x200'),
+    '/showcase/wood_1.JPG', class: 'fancybox', rel: 'group', title: 'wood floor', alt: 'Photo' %>
 
-  <%= link_to image_tag('stairs_wood.jpg', size: '200x200'),
-    'images/stairs_wood.JPG', class: 'fancybox', rel: 'group', title: 'stairs wood', alt: 'Photo' %>
+  <%= link_to image_tag('wood_2.JPG', size: '200x200'),
+    '/showcase/wood_2.JPG', class: 'fancybox', rel: 'group', title: 'stairs wood', alt: 'Photo' %>
 
 
 
   <%# @photos.each do |photo| %>
   <%# link_to image_tag(photo.file.thumb('200x200#').url),
        photo.file.remote_url,
-    class: 'fancybox', rel: 'group', title: photo.title, alt: 'Photo' %>'
+    class: 'fancybox', rel: 'group', title: photo.title, alt: 'Photo' %>
    <%# end %>
 
 
