@@ -1,44 +1,22 @@
 
-<script>
-$(document).ready(function() {
-  $('.fancybox').fancybox( {
-    autoScale: true,
-    type: 'iframe',
-    width: 500,
-    openEffect: 'elastic',
-    helpers: {
-      buttons: {},
-      thumbs: {
-      width: 50,
-      height: 50
-      }
-    }
-  });
-});
-</script>
+
 
 <div class="header">
     <br><h1 class="title_link"><%= link_to 'Justin Floors Inc', root_path %></h1>
   <h2>Showcase</h2>
 </div>
 
-<div>
+<div class="photo-block">
+  <h2 class='showcase_header' id="wood">Wood Floor</h2>
+  <% @photos_wood.each do |photo| %>
+  <%= link_to image_tag(photo[:url], size: '200x200'),
+       asset_path(photo[:url]), class: 'fancybox', rel: 'group', title: photo[:title], alt: 'Photo' %>
+  <% end %>
 
-  <%= link_to image_tag('wood_1.JPG', size: '200x200'),
-    '/showcase/wood_1.JPG', class: 'fancybox', rel: 'wood', title: 'wood floor', alt: 'Photo' %>
-
-  <%= link_to image_tag('wood_3_stairs.JPG', size: '200x200'),
-    '/showcase/wood_3_stairs.JPG', class: 'fancybox', rel: 'wood', title: 'Stairs', alt: 'Photo' %>
-
-  <%= link_to image_tag('wood_4_stairs.JPG', size: '200x200'),
-    'wood_4_stairs.JPG', class: 'fancybox', rel: 'wood', title: 'Stairs', alt: 'Photo' %>
-
-
-  <%# @photos.each do |photo| %>
-  <%# link_to image_tag(photo.file.thumb('200x200#').url),
-       photo.file.remote_url,
-    class: 'fancybox', rel: 'group', title: photo.title, alt: 'Photo' %>
-   <%# end %>
-
+  <h2 class="showcase_header" id="carpet">Carpet</h2>
+  <% @photos_carpet.each do |photo| %>
+    <%= link_to image_tag(photo[:url], size: '200x200'),
+      asset_path(photo[:url]), class: 'fancybox', rel: 'group', title: photo[:title], alt: 'Photo' %>
+  <% end %>
 
 </div>

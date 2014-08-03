@@ -3,6 +3,8 @@ Rails.application.routes.draw do
   get 'contact' => 'contact#index'
   get 'showcase' => 'showcase#index'
   get 'products' => 'product#index'
+  get 'about' => 'about#index'
+  get 'showcase/show/:id' => 'showcase#show'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

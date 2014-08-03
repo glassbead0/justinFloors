@@ -14,13 +14,14 @@
  *= require_self
  *= require jquery.fancybox.css
  *= require jquery.fancybox-thumbs
+ *= require bootstrap.min
  */
 
 .header {
   background-color: #bfb9b0;
   text-align: center;
   border-radius: 10px;
-  font-family: garamond;
+  font-family: garamond, sans-serif;
   text-decoration: none;
   opacity: 0.7;
 
@@ -31,6 +32,7 @@
   text-decoration-color: #000000
 }
 
+
 .title_link a:hover {
   color: #730E15;
   text-decoration: none;
@@ -38,12 +40,12 @@
 }
 
 body {
-  background-image: url('wood_floor_wallpaper.JPG');
+  background-image: url('wood_floor_wallpaper.jpg');
 }
 
 .boxes {
   display: inline-block;
-  background-color: gray;
+  background-color: #8f8980;
   opacity: 0.9;
   border-radius: 8px;
   padding: 7px;
@@ -62,4 +64,36 @@ body {
   background: #BBBBBB;
   border-radius: 10px;
   opacity: 0.7
+}
+
+.link_box a:link a:visited a:active {
+  text-decoration: none;
+  text-decoration-color: #000000
+}
+
+.link_box a:hover {
+  color: #730E15;
+  text-decoration: none;
+  background: none;
+}
+
+a {
+  text-transform: none;
+}
+
+.showcase_header {
+  text-align: center;
+  color: #bce8f1;
+  font-family: garamond, sans-serif;
+}
+
+#wood {
+  background-image: url('wood_panel.jpg');
+
+}
+
+#carpet {
+  background-image: url('carpet_panel.jpg');
+  color: #080808;
+  font-weight: bold;
 }

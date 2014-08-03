@@ -4,6 +4,8 @@ source 'https://rubygems.org'
 gem 'rspec-rails'
 gem 'guard-rspec'
 gem 'guard-rubocop'
+gem 'guard-bundler'
+gem 'jquery-turbolinks'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.4'
