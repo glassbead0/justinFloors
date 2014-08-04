@@ -1,27 +1,53 @@
 <%= render 'nav_bar' %>
+<div class="page-header">
 
-<div class="containter">
+  <h1 align="center">Justin Floors Inc.</h1>
+</div>
+
+<!--<div class="containter">-->
   <div class="row">
 
-    <div class="boxes col-sm-3" id="about"><a href="/about">
-      <h3  class="link_box" align="center">About Justin Floors</h3>
-      <p  class="link_box">Justin Glasenapp has x year working in the roaring fork valley selling quality flooring products...</p>
-      <%= link_to image_tag('justin_batman.jpg', size: '250x300', align: 'center'), '/about' %>
-    </a></div>
+    <div class="col-sm-3">
+      <div class="panel panel-primary">
 
-    <div class='boxes col-sm-3' id="showcase"><a href="/showcase">
-      <h3 align="center">Showcase</h3>
-        <%= link_to image_tag('wood_5_kitchen.jpg', align: 'center', size: '220x220'), '/showcase' %>
-        <%= link_to image_tag('carpet_2.jpg', align: 'center', size: '220x220') , '/showcase' %>
-    </a></div>
+          <div class="panel-heading panel-info">
+          <h3 class="panel-title" align="center"><a href="/about">About Justin Floors</a></h3>
+          </div>
 
-    <div class='boxes col-sm-3' id="contact"><a href="/contact">
-      <h3 align="center">Contact Justin Floors at:</h3>
-      <ul>
-        <li>phone: 970-618-2380</li>
-        <li>email: justintime6955@msn.com</li>
-      </ul>
-    </a></div>
+        <div class="panel-body">
+          <p>Justin Glasenapp has x year working in the roaring fork valley selling quality flooring products...</p>
+          <%= link_to image_tag('justin_batman.jpg', size: '250x300', align: 'center'), '/about' %>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-3">
+      <div class="panel panel-primary">
+        <div class="panel-heading panel-info">
+          <h3 class="panel-title" align="center"><a href="/showcase">Showcase</a></h3>
+        </div>
+        <div class="panel-body">
+          <%= link_to image_tag('wood_5_kitchen.jpg', align: 'center', size: '220x220'), '/showcase' %>
+          <%= link_to image_tag('carpet_2.jpg', align: 'center', size: '220x220') , '/showcase' %>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-3">
+      <div class="panel panel-primary">
+        <div class="panel-heading panel-info">
+          <h3 class="panel-title" align="center"><a href="/contact">Contact</a></h3>
+        </div>
+        <div class="panel-body">
+          <ul>
+            <li>phone: 970-618-2380</li>
+            <li>email: justintime6955@msn.com</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
 
   </div>
-</div>
+<!--</div>-->

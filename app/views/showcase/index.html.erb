@@ -1,16 +1,36 @@
 <%= render 'welcome/nav_bar' %>
 
-<div class="photo-block">
-  <h2 class='showcase_header' id="wood">Wood Floor</h2>
-  <% @photos_wood.each do |photo| %>
-  <%= link_to image_tag(photo[:url], size: '200x200'),
-       asset_path(photo[:url]), class: 'fancybox', rel: 'group', title: photo[:title], alt: 'Photo' %>
-  <% end %>
+<div class="body">
 
-  <h2 class="showcase_header" id="carpet">Carpet</h2>
-  <% @photos_carpet.each do |photo| %>
+  <div class="photo-block">
+
+    <div class="col-sm-12">
+      <div class="panel panel-warning">
+        <div class="panel-heading">
+          <h3 class="panel-title" align="center">Wood Floors</h3>
+        </div>
+      </div>
+    </div>
+
+
+
+    <% @photos_wood.each do |photo| %>
     <%= link_to image_tag(photo[:url], size: '200x200'),
-      asset_path(photo[:url]), class: 'fancybox', rel: 'group', title: photo[:title], alt: 'Photo' %>
-  <% end %>
+         asset_path(photo[:url]), class: 'fancybox', rel: 'group', title: photo[:title], alt: 'Photo' %>
+    <% end %>
+
+    <div class="col-sm-12">
+      <div class="panel panel-warning">
+        <div class="panel-heading">
+          <h3 class="panel-title" align="center">Carpet</h3>
+        </div>
+      </div>
+    </div>
+
+    <% @photos_carpet.each do |photo| %>
+      <%= link_to image_tag(photo[:url], size: '200x200'),
+        asset_path(photo[:url]), class: 'fancybox', rel: 'group', title: 'Needs title', alt: 'Photo' %>
+    <% end %>
+  </div>
 
 </div>
