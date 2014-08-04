@@ -44,14 +44,14 @@ body {
 }
 
 .boxes {
-  display: inline-block;
-  background-color: #8f8980;
+  // display: inline-block;
+  background-color: #afa9a0;
   opacity: 0.9;
   border-radius: 8px;
   padding: 7px;
-  margin: 30px 70px;
-  width: 300px;
-  height: 500px;
+  margin: 5px 10px;
+  //width: 300px;
+  //height: 500px;
 }
 
 
