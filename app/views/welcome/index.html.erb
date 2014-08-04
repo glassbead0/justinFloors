@@ -1,63 +1,59 @@
 <%= render 'nav_bar' %>
 <div class="page-header">
-
   <h1 align="center">Justin Floors Inc.</h1>
-
 </div>
 
-  <div class="row container">
+<div class="container">
+<div class="row">
 
-    <div class="col-sm-4 col-md-4">
-      <div class="panel panel-primary">
-
-          <div class="panel-heading panel-info">
-          <h3 class="panel-title" align="center"><a href="/about">About Justin Floors</a></h3>
-          </div>
-
-        <div class="panel-body">
-          <p>Justin Glasenapp has been working for x years working in the roaring fork valley selling quality flooring products...</p>
-          <p><a href="/about">(click for more)</a></p>
-          <div class="row">
-            <div class="col-xs-12">
-              <%= link_to image_tag('justin_batman.jpg', size: '250x300', align: 'center'), '/about', class: 'thumbnail' %>
-              <p>(I stole this picture from your facebook. send me another picture to put here.)</p>
-            </div>
+  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
+    <div class="panel panel-primary">
+      <div class="panel-heading panel-info">
+        <h3 class="panel-title" align="center"><a href="/about">About Justin Floors</a></h3>
+      </div>
+      <div class="panel-body">
+        <p>Justin Glasenapp has been working for x years working in the roaring fork valley selling quality flooring products...</p>
+        <p><a href="/about">(click for more)</a></p>
+        <div class="row">
+          <div class="col-xs-12">
+            <%= link_to image_tag('justin_batman.jpg', size: '250x300', align: 'center'), '/about', class: 'thumbnail' %>
+            <p>(I stole this picture from your facebook. send me another picture to put here. unless you like this one of course)</p>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <div class="col-sm-4">
-      <div class="panel panel-primary">
-        <div class="panel-heading panel-info">
-          <h3 class="panel-title" align="center"><a href="/showcase">Showcase</a></h3>
-        </div>
-        <div class="panel-body">
-          <div class="row">
-            <div class="col-xs-12">
-              <%= link_to image_tag('wood_5_kitchen_demo.jpg', align: 'center', size: '220x220'), '/showcase', class: 'thumbnail' %>
-            </div>
-            <div class="col-xs-12">
-              <%= link_to image_tag('carpet_4.jpg', align: 'center', size: '220x220') , '/showcase', class: 'thumbnail' %>
-            </div>
+  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
+    <div class="panel panel-primary">
+      <div class="panel-heading panel-info">
+        <h3 class="panel-title" align="center"><a href="/showcase">Showcase</a></h3>
+      </div>
+      <div class="panel-body">
+        <div class="row">
+          <div class="col-xs-12">
+            <%= link_to image_tag('wood_5_kitchen_demo.jpg', align: 'center', size: '220x220'), '/showcase', class: 'thumbnail' %>
+          </div>
+          <div class="col-xs-12">
+            <%= link_to image_tag('carpet_4.jpg', align: 'center', size: '220x220') , '/showcase', class: 'thumbnail' %>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <div class="col-sm-4">
-      <div class="panel panel-primary">
-        <div class="panel-heading panel-info">
-          <h3 class="panel-title" align="center"><a href="/contact">Contact</a></h3>
-        </div>
-        <div class="panel-body">
-          <ul>
-            <li>phone: 970-618-2380</li>
-            <li>email: justintime6955@msn.com</li>
-          </ul>
-        </div>
+  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+    <div class="panel panel-primary">
+      <div class="panel-heading panel-info">
+        <h3 class="panel-title" align="center"><a href="/contact">Contact</a></h3>
+      </div>
+      <div class="panel-body">
+        <ul>
+          <li>phone: 970-618-2380</li>
+          <li>email: justintime6955@msn.com</li>
+        </ul>
       </div>
     </div>
-
-
+  </div>
+</div>
 </div>
