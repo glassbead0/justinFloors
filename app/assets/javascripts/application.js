@@ -12,11 +12,13 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
+//= //require turbolinks
+//= //require jquery.turbolinks
 //= require_tree .
 //= require jquery.fancybox.pack
 //= require jquery.fancybox-buttons
 //= require jquery.fancybox-thumbs
+//= require bootstrap.min
 
 //jQuery(function($) { // as soon as DOM is ready
 //$(".fancybox").fancybox({ //initialize fancybox on all pages where it is present
@@ -26,16 +28,19 @@
 //      thumbs: {}
 //    }
 //  });
-//});
+////});
 
 $(document).ready(function() {
   $('.fancybox').fancybox( {
+    fitToView: true,
+    autoScale: true,
+    openEffect: 'elastic',
+    autoDimensions: true,
     helpers: {
-      title: {type: 'inside'},
       buttons: {},
       thumbs: {
-        width: 50;
-        height: 50
+        width: 50,
+        height: 50,
       }
     }
   });

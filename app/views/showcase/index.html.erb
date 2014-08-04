@@ -1,16 +1,40 @@
-<div class="header">
-  <h1 class="title_link"><%= link_to 'Justin Floors Inc', root_path %></h1>
-  <h2>Showcase</h2>
-</div>
+<%= render 'welcome/nav_bar' %>
 
 <div class="body">
 
+    <div class="col-sm-12">
+      <div class="panel panel-warning">
+        <div class="panel-heading">
+          <h3 class="panel-title" align="center">Wood</h3>
+        </div>
+      </div>
+    </div>
 
-  <%= @photos.each do |photo| %>
-  <%= link_to image_tag(photo.file.thumb('200x200#').url),
-       photo.file.remote_url,
-    class: 'fancybox', rel: 'group', title: photo.title, alt: 'Photo' %>'
-   <% end %>
+    <div class="row container">
+      <% @photos_wood.each do |photo| %>
+      <div class="col-lg-2 col-md-2 col-sm-3 col col-xs-4">
+        <%= link_to image_tag(photo[:url]),
+             asset_path(photo[:url]), class: 'fancybox thumbnail', rel: 'group', title: photo[:title], alt: 'Photo' %>
+      </div>
+      <% end %>
+     </div>
 
+
+    <div class="col-sm-12">
+      <div class="panel panel-warning">
+        <div class="panel-heading">
+          <h3 class="panel-title" align="center">Carpet</h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="row container">
+      <% @photos_carpet.each do |photo| %>
+        <div class="col-lg-2 col-md-2 col-sm-3 col col-xs-4">
+          <%= link_to image_tag(photo[:url], size: '200x200'),
+            asset_path(photo[:url]), class: 'fancybox thumbnail', rel: 'group', title: photo[:title], alt: 'Photo' %>
+        </div>
+      <% end %>
+    </div>
 
 </div>

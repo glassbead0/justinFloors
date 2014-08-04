@@ -14,37 +14,21 @@
  *= require_self
  *= require jquery.fancybox.css
  *= require jquery.fancybox-thumbs
+ *= require bootstrap.min
  */
 
-.header {
-  background-color: #bfb9b0;
-  text-align: center;
-  border-radius: 10px;
-  font-family: garamond;
-  text-decoration: none;
 
+body {
+  background-image: url('wood_floor_wallpaper.jpg');
 }
 
-.title_link a:link, a:visited, a:active {
-  text-decoration: none;
-  color: #000000;
-}
-
-.title_link a:hover {
-  color: #730E15;
-  text-decoration: none;
-}
-
-.body {
-
-}
-
-.footer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100px;   /* Height of the footer */
-  background: #BBBBBB;
-  border-radius: 10px;
+.boxes {
+  // display: inline-block;
+  background-color: #afa9a0;
+  opacity: 0.9;
+  border-radius: 8px;
+  padding: 7px;
+  margin: 50px 70px;
+  //width: 300px;
+  //height: 500px;
 }
