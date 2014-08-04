@@ -2,22 +2,23 @@
 
 <div class="body">
 
-  <div class="photo-block">
-
     <div class="col-sm-12">
       <div class="panel panel-warning">
         <div class="panel-heading">
-          <h3 class="panel-title" align="center">Wood Floors</h3>
+          <h3 class="panel-title" align="center">Wood</h3>
         </div>
       </div>
     </div>
 
+    <div class="row container">
+      <% @photos_wood.each do |photo| %>
+      <div class="col-lg-2 col-md-2 col-sm-3 col col-xs-4">
+        <%= link_to image_tag(photo[:url]),
+             asset_path(photo[:url]), class: 'fancybox thumbnail', rel: 'group', title: photo[:title], alt: 'Photo' %>
+      </div>
+      <% end %>
+     </div>
 
-
-    <% @photos_wood.each do |photo| %>
-    <%= link_to image_tag(photo[:url], size: '200x200'),
-         asset_path(photo[:url]), class: 'fancybox', rel: 'group', title: photo[:title], alt: 'Photo' %>
-    <% end %>
 
     <div class="col-sm-12">
       <div class="panel panel-warning">
@@ -27,10 +28,13 @@
       </div>
     </div>
 
-    <% @photos_carpet.each do |photo| %>
-      <%= link_to image_tag(photo[:url], size: '200x200'),
-        asset_path(photo[:url]), class: 'fancybox', rel: 'group', title: 'Needs title', alt: 'Photo' %>
-    <% end %>
-  </div>
+    <div class="row container">
+      <% @photos_carpet.each do |photo| %>
+        <div class="col-lg-2 col-md-2 col-sm-3 col col-xs-4">
+          <%= link_to image_tag(photo[:url], size: '200x200'),
+            asset_path(photo[:url]), class: 'fancybox thumbnail', rel: 'group', title: photo[:title], alt: 'Photo' %>
+        </div>
+      <% end %>
+    </div>
 
 </div>
