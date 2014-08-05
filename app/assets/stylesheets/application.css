@@ -50,3 +50,14 @@ body {
 .testimonial_button {
   float: right;
 }
+
+
+/* these two attributes attempt to fix the dropdown overlap problem, but don't work */
+.dropdown > ul.dropdown-menu {
+  z-index: 100;
+}
+
+.testimonial_button {
+  z-index: 5;
+  position: absolute;
+}
