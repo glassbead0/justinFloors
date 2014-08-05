@@ -47,7 +47,7 @@ body {
   color: black;
 }
 
-.testimonial_button {
+.signature {
   float: right;
 }
 
@@ -61,3 +61,4 @@ body {
   z-index: 5;
   position: absolute;
 }
+

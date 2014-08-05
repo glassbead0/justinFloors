@@ -1,5 +1,25 @@
 class WelcomeController < ApplicationController
-  def index
 
+  def index
+    @testimonials = Testimonial.all
+    while true do
+      rand1 = rand(@testimonials.length)
+      if !@testimonials[rand1].nil?
+        @sample_testimonial_1 = @testimonials[rand1]
+        break
+      end
+    end
+
+    while true do
+      rand2 = rand(@testimonials.length)
+      if !@testimonials[rand2].nil? && rand1 != rand2
+        @sample_testimonial_2 = @testimonials[rand2]
+        break
+      end
+    end
+  end
+
+  def sample_testimonials
+    [@sample_testimonial_1, @sample_testimonial_2]
   end
 end
