@@ -1,8 +1,13 @@
 <%= render 'welcome/nav_bar' %>
 
-<h1 class="title_justin" align="center">Tell us what you think of Justin Floors</h1>
+<div class="page-header container">
+  <a href="/testimonials">
+    <div class="btn btn-primary testimonial_button">Back</div>
+  </a>
+  <h1 align="center" class="title_justin">Tell us what you think of Justin Floors</h1>
+</div>
+
 <div class="container">
 <%= render 'form' %>
 
-<%= link_to 'Back', testimonials_path %>
-</div>
+

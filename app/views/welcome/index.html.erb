@@ -3,19 +3,14 @@
 
   <!-- Single button -->
   <div class="btn-group btn-primary testimonial_button">
-    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-      Testimonials <span class="caret"></span>
+    <button type="button" class="btn btn-primary dropdown-toggle testimonial_button" data-toggle="dropdown">
+      Contact <span class="caret"></span>
     </button>
     <ul class="dropdown-menu" role="menu">
-      <li><a href="/testimonials">Read Testimonials</a></li>
-      <li><a href="/testimonials/new">Write a Testimonial</a></li>
+      <li><a href="/contact">phone: 970-618-2380</a></li>
+      <li><a href="/contact">email: justintime6955@msn.com</a></li>
     </ul>
   </div>
-
-
-  <!--<a href="/testimonials">-->
-    <!--<button type="button"class="btn btn-primary testimonial_button">Testimonials</button>-->
-  <!--</a>-->
 
   <h1 align="center" class="title_justin">Justin Floors Inc.</h1>
 </div>
@@ -29,7 +24,8 @@
   <div class="container">
     <div class="row">
 
-      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
+      <!-- ABOUT PANEL -->
+      <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
         <div class="panel panel-info ">
           <div class="panel-heading panel-info">
             <h3 class="panel-title dumb" align="center"><a href="/about">About Justin Floors</a></h3>
@@ -46,7 +42,8 @@
         </div>
       </div>
 
-      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
+      <!-- SHOWCASE PANEL -->
+      <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
         <div class="panel panel-info">
           <div class="panel-heading panel-info">
             <h3 class="panel-title dumb" align="center"><a href="/showcase">Showcase</a></h3>
@@ -64,7 +61,30 @@
         </div>
       </div>
 
-      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+      <!-- TESTIMONIALS PANEL -->
+      <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+        <div class="panel panel-info">
+          <div class="panel-heading panel-info">
+            <h3 class="panel-title dumb" align="center"><a href="/testimonials">Testimonials</a></h3>
+          </div>
+          <div class="panel-body">
+            <ul>
+              <li>"<%= @sample_testimonial_1.testimonial %>"<br><div class="signature">-<%= @sample_testimonial_1.name %></div></li><br><br>
+              <li>"<%= @sample_testimonial_2.testimonial %>"<br><div class="signature">-<%= @sample_testimonial_2.name %></div></li><br><br>
+            </ul>
+            <a href="/testimonials">
+              <div class="btn btn-primary">Read More</div>
+            </a>
+            <a href="/testimonials/new">
+              <div class="btn btn-primary">Write a Testimonial</div>
+            </a>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- CONTACT PANEL -->
+      <div class="col-lg-12 col-md-12 col-sm-6 col-xs-12">
         <div class="panel panel-info">
           <div class="panel-heading panel-info">
             <h3 class="panel-title dumb" align="center"><a href="/contact">Contact</a></h3>

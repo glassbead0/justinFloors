@@ -1,8 +1,14 @@
 <%= render 'welcome/nav_bar' %>
 
-<h1>Editing testimonial</h1>
+<div class="page-header container">
+  <a href="/testimonials">
+    <div class="btn btn-primary testimonial_button">Back</div>
+  </a>
+  <h1 align="center" class="title_justin">Edit your Statement</h1>
+</div>
 
-<%= render 'form' %>
+<div class="container">
+  <%= render 'form' %>
 
-<%= link_to 'Show', @testimonial %> |
-<%= link_to 'Back', testimonials_path %>
+
+<%= link_to 'Show', @testimonial %>
