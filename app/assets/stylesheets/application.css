@@ -36,6 +36,11 @@ body {
 
 .dumb a:hover {
   color: #730E15;
+  background-color: transparent;
+}
+
+.image_bg a:hover {
+  color: lightgray;
 }
 
 .title_justin {
