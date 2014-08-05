@@ -6,6 +6,8 @@ gem 'guard-rspec'
 gem 'guard-rubocop'
 gem 'guard-bundler'
 gem 'jquery-turbolinks'
+gem 'bootstrap_form'
+
 gem 'factory_girl_rails'
 group :test, :darwin, :development do
   gem 'ruby_gntp'

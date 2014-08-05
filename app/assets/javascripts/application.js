@@ -19,6 +19,7 @@
 //= require jquery.fancybox-buttons
 //= require jquery.fancybox-thumbs
 //= require bootstrap.min
+//= require bootstrap.js
 
 //jQuery(function($) { // as soon as DOM is ready
 //$(".fancybox").fancybox({ //initialize fancybox on all pages where it is present
@@ -29,6 +30,8 @@
 //    }
 //  });
 ////});
+
+$('.dropdown-toggle').dropdown();
 
 $(document).ready(function() {
   $('.fancybox').fancybox( {

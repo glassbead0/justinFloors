@@ -15,6 +15,7 @@
  *= require jquery.fancybox.css
  *= require jquery.fancybox-thumbs
  *= require bootstrap.min
+ *= require rails_bootstrap_forms
  */
 
 
@@ -35,4 +36,12 @@ body {
 
 .dumb a:hover {
   color: #730E15;
+}
+
+.title_justin {
+  color: black;
+}
+
+.testimonial_button {
+  float: right;
 }
