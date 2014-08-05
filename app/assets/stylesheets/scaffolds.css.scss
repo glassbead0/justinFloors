@@ -25,9 +25,10 @@ a {
   }
   &:hover {
     color: #fff;
-    background-color: #ddd;
+    background-color: transparent;
   }
 }
+
 
 div {
   &.field, &.actions {

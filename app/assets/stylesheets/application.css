@@ -39,6 +39,7 @@ body {
   background-color: transparent;
 }
 
+/* this does not work for some reason */
 .image_bg a:hover {
   color: lightgray;
 }
