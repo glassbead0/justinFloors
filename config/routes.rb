@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :testimonials
+
   get 'welcome' => 'welcome#index'
   get 'about' => 'about#index'
   get 'showcase' => 'showcase#index'

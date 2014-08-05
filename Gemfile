@@ -6,6 +6,14 @@ gem 'guard-rspec'
 gem 'guard-rubocop'
 gem 'guard-bundler'
 gem 'jquery-turbolinks'
+gem 'factory_girl_rails'
+group :test, :darwin, :development do
+  gem 'ruby_gntp'
+end
+group :test do
+  gem 'capybara'
+  gem 'shoulda-matchers', require: false
+end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.4'
