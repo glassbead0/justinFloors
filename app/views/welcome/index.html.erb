@@ -69,8 +69,8 @@
           </div>
           <div class="panel-body">
             <ul>
-              <li>"<%= @sample_testimonial_1.testimonial %>"<br><div class="signature">-<%= @sample_testimonial_1.name %></div></li><br><br>
-              <li>"<%= @sample_testimonial_2.testimonial %>"<br><div class="signature">-<%= @sample_testimonial_2.name %></div></li><br><br>
+              <li>"<%= @sample_testimonial_1.testimonial unless @sample_testimonial_1.nil? %>"<br><div class="signature">-<%= @sample_testimonial_1.name unless @sample_testimonial_1.nil? %></div></li><br><br>
+              <li>"<%= @sample_testimonial_2.testimonial unless @sample_testimonial_2.nil? %>"<br><div class="signature">-<%= @sample_testimonial_2.name unless @sample_testimonial_2.nil? %></div></li><br><br>
             </ul>
             <a href="/testimonials">
               <div class="btn btn-primary">Read More</div>
