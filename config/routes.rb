@@ -1,10 +1,10 @@
 Rails.application.routes.draw do
+  resources :testimonials
+
   get 'welcome' => 'welcome#index'
-  get 'contact' => 'contact#index'
-  get 'showcase' => 'showcase#index'
-  get 'products' => 'product#index'
   get 'about' => 'about#index'
-  get 'showcase/show/:id' => 'showcase#show'
+  get 'showcase' => 'showcase#index'
+  get 'contact' => 'contact#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

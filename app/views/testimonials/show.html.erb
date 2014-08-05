@@ -1,0 +1,21 @@
+<%= render 'welcome/nav_bar' %>
+
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @testimonial.name %>
+</p>
+
+<p>
+  <strong>Testimonial:</strong>
+  <%= @testimonial.testimonial %>
+</p>
+
+<p>
+  <strong>Rating:</strong>
+  <%= @testimonial.rating %>
+</p>
+
+<%= link_to 'Edit', edit_testimonial_path(@testimonial) %> |
+<%= link_to 'Back', testimonials_path %>
