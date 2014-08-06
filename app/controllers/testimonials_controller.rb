@@ -56,7 +56,7 @@ class TestimonialsController < ApplicationController
   def destroy
     @testimonial.destroy
     respond_to do |format|
-      format.html { redirect_to testimonials_url, notice: 'Testimonial was successfully destroyed.' }
+      format.html { redirect_to testimonials_url, notice: 'Testimonial was Deleted.' }
       format.json { head :no_content }
     end
   end
