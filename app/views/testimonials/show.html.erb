@@ -1,21 +1,27 @@
 <%= render 'welcome/nav_bar' %>
 
-<p id="notice"><%= notice %></p>
+<% if notice %>
+<div class="alert alert-success alert-dismissible container" align="center" role="alert">
+  <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+  <%= notice %>
+</div>
+<% end %>
 
-<p>
-  <strong>Name:</strong>
-  <%= @testimonial.name %>
-</p>
+    <ul class="list-group container">
+        <li class="list-group-item">
+          "<%=@testimonial.testimonial %>"
+          <em class="signature">-<%= @testimonial.name %></em>
+        </li>
 
-<p>
-  <strong>Testimonial:</strong>
-  <%= @testimonial.testimonial %>
-</p>
+        <!-- uncomment below to edit and delete testimonials -->
+        <li>
+        <%= link_to 'Edit', edit_testimonial_path(@testimonial) %>
+        <%= link_to 'Delete', @testimonial, method: :delete, data: { confirm: 'Are you sure?' } %>
+        </li>
+    </ul>
 
-<p>
-  <strong>Rating:</strong>
-  <%= @testimonial.rating %>
-</p>
-
-<%= link_to 'Edit', edit_testimonial_path(@testimonial) %> |
-<%= link_to 'Back', testimonials_path %>
+<div class="container">
+  <a href="/testimonials">
+    <div class="btn btn-primary testimonial_button">Back</div>
+  </a>
+</div>
