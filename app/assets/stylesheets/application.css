@@ -21,6 +21,8 @@
 
 body {
   background-image: url('wood_floor_wallpaper.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .boxes {
