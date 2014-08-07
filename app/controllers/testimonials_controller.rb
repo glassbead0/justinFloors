@@ -4,7 +4,7 @@ class TestimonialsController < ApplicationController
   # GET /testimonials
   # GET /testimonials.json
   def index
-    @testimonials = Testimonial.all.paginate( page: params[:page], per_page: 10)
+    @testimonials = Testimonial.all.paginate( page: params[:page], per_page: 15)
   end
 
   # GET /testimonials/1
