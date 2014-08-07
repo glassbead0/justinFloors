@@ -5,6 +5,8 @@
     <div class="btn btn-primary testimonial_button">Write a Testimonial</div>
    </a>
   <h1 align="center" class="title_justin">Testimonials</h1>
+
+  <%= will_paginate @testimonials, renderer: BootstrapPagination::Rails %>
 </div>
 
 
