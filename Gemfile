@@ -7,6 +7,8 @@ gem 'guard-rubocop'
 gem 'guard-bundler'
 gem 'jquery-turbolinks'
 gem 'bootstrap_form', '~> 2.1.1'
+gem 'will_paginate', '~>3.0.7'
+
 
 gem 'factory_girl_rails'
 group :test, :darwin, :development do

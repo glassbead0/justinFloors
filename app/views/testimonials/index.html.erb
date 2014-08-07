@@ -5,6 +5,19 @@
     <div class="btn btn-primary testimonial_button">Write a Testimonial</div>
    </a>
   <h1 align="center" class="title_justin">Testimonials</h1>
+
+
+  <ul class="pagination container">
+    <li><a href="#">&laquo;</a></li>
+    <li class="active"><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">5</a></li>
+    <li><a href="#">&raquo;</a></li>
+  </ul>
+
+  <%= will_paginate @testimonials %>
 </div>
 
 
