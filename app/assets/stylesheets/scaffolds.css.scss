@@ -29,6 +29,11 @@ a {
   }
 }
 
+a.dumb2 {
+  &:visited {
+    color: #fff;
+  }
+}
 
 div {
   &.field, &.actions {

@@ -15,18 +15,16 @@
     </ul>
 
 <div class="container">
-  <%= link_to testimonials_path, :class => 'btn btn-primary' do %>
-    <span class="glyphicon glyphicon-list-alt"></span>
+  <%= link_to testimonials_path, class: 'btn btn-primary dumb2' do %>
+    <span class="glyphicon"></span>
     Back
   <% end %>
-  <%= link_to edit_testimonial_path(@testimonial), :class => 'btn btn-warning' do %>
+  <%= link_to edit_testimonial_path(@testimonial), class: 'btn btn-primary dumb2' do %>
     <span class="glyphicon glyphicon-pencil"></span>
     Edit
   <% end %>
-  <%= link_to @testimonial, class: 'btn btn-warning', method: :delete, data: { confirm: 'Are you sure you want to delete this review?' } do %>
+  <%= link_to @testimonial, class: 'btn btn-danger dumb2', method: :delete, data: {confirm: 'Are you sure you want to delete your review?'} do %>
     <span class="glyphicon"></span>
     Delete
   <% end %>
-
-
 </div>
