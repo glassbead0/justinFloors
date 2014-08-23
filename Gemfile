@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-
+ruby '2.1.2'
 gem 'rspec-rails'
 gem 'guard-rspec'
 gem 'guard-rubocop'
@@ -9,8 +9,9 @@ gem 'jquery-turbolinks'
 gem 'bootstrap_form', '~> 2.1.1'
 gem 'will_paginate', '~>3.0.7'
 gem 'will_paginate-bootstrap'
-
+gem 'faker'
 gem 'factory_girl_rails'
+gem 'table_print'
 group :test, :darwin, :development do
   gem 'ruby_gntp'
 end
@@ -19,10 +20,18 @@ group :test do
   gem 'shoulda-matchers', require: false
 end
 
+group :development, :test do
+  gem 'sqlite3'
+end
+
+group :production do
+  gem 'pg'
+  gem 'rails_12factor'
+end
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.4'
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets
