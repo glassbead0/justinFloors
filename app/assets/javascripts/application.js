@@ -15,12 +15,11 @@
 //= //require turbolinks
 //= //require jquery.turbolinks
 //= require dropzone
-//= require_tree .
 //= require jquery.fancybox.pack
 //= require jquery.fancybox-buttons
 //= require jquery.fancybox-thumbs
-//= require bootstrap.min
-//= require bootstrap.js
+//= require bootstrap
+//= require_tree .
 
 //jQuery(function($) { // as soon as DOM is ready
 //$(".fancybox").fancybox({ //initialize fancybox on all pages where it is present
