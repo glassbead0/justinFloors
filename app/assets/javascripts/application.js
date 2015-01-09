@@ -14,6 +14,7 @@
 //= require jquery_ujs
 //= //require turbolinks
 //= //require jquery.turbolinks
+//= require dropzone
 //= require_tree .
 //= require jquery.fancybox.pack
 //= require jquery.fancybox-buttons

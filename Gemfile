@@ -12,6 +12,9 @@ gem 'will_paginate-bootstrap'
 gem 'faker'
 gem 'factory_girl_rails'
 gem 'table_print'
+
+gem 'dropzonejs-rails'
+gem 'devise'
 group :test, :darwin, :development do
   gem 'ruby_gntp'
 end
