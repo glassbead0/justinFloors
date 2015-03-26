@@ -93,22 +93,30 @@
           </div>
         </div>
       </div>
+    </div>
+  </div>
+  <!-- BLOG -->
+  <div class="blog">
+    <div class="container">
+      <div class="row">
+        <h1 align='center'>The Latest from Justin Floors</h1>
+        <% if current_admin %>
+          <%= link_to 'New Post', new_post_path, class: 'btn btn-large btn-success' %>
+        <% end %>
+      </div>
+      <% @posts.each do |post| %>
+        <div class="row">
+          <div class="well">
+            <h3 align='center'><span><%= post.title %></span></h3>
 
-      <!-- CONTACT PANEL -->
-      <div class="col-lg-12 col-md-12 col-sm-6 col-xs-12">
-        <div class="panel panel-info">
-          <div class="panel-heading panel-info">
-            <h3 class="panel-title dumb" align="center"><a href="/contact">Contact</a></h3>
-          </div>
-          <div class="panel-body">
-            <ul>
-              <li>phone: 970-618-2380</li>
-              <li>email: justintime6955@msn.com</li>
-              <li>Showroom:  6560 County rd 335 New Castle CO 81647</li>
-            </ul>
+            <td><%= post.body %></td>
+            <% if current_admin %>
+              <%= link_to 'Edit', edit_post_path(post), class: 'btn btn-info', style: 'float: right' %>
+              <%= link_to 'Delete', post, method: :delete, class: 'btn btn-warning', style: 'float: right', data: { confirm: 'Are you sure?' } %>
+            <% end %>
           </div>
         </div>
-      </div>
+      <% end %>
     </div>
   </div>
 </body>

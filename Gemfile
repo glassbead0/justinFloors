@@ -13,6 +13,7 @@ gem 'faker'
 gem 'factory_girl_rails'
 gem 'table_print'
 
+gem 'paperclip'
 gem 'dropzonejs-rails'
 gem 'devise'
 group :test, :darwin, :development do

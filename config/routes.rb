@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
+  devise_for :admins
   resources :testimonials
+  resources :posts
 
   get 'welcome' => 'welcome#index'
   get 'about' => 'about#index'

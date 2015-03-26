@@ -1,6 +1,10 @@
 class WelcomeController < ApplicationController
 
+  # respond_to :html
   def index
+    @posts = Post.all
+    # respond_with(@posts)
+
     @testimonials = Testimonial.all
     counter = 0
     while counter < 20 do

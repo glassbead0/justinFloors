@@ -1,0 +1,22 @@
+<div class="container">
+  <h1 align='center'>The Latest from Justin Floors</h1>
+
+      <% @posts.each do |post| %>
+        <div class="well">
+          <h3 align='center'><span class="label label-default"><%= post.title %></span></h3>
+            
+            <td><%= post.body %></td>
+            <% if current_admin %>
+              <%= link_to 'Edit', edit_post_path(post), class: 'btn btn-info' %>
+              <%= link_to 'Destroy', post, method: :delete, class: 'btn btn-warning', data: { confirm: 'Are you sure?' } %>
+            <% end %>
+          </tr>
+        </div>
+      <% end %>
+    </tbody>
+
+  <br>
+  <% if current_admin %>
+    <%= link_to 'New Post', new_post_path %>
+  <% end %>
+</div>
