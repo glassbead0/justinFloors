@@ -108,6 +108,7 @@
         <div class="row">
           <div class="well">
             <h3 align='center'><span><%= post.title %></span></h3>
+            <h6 align="center"><%= post.created_at.strftime("%b %e, %Y") %></h6>
 
             <td><%= post.body %></td>
             <% if current_admin %>

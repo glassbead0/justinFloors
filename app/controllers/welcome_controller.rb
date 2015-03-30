@@ -2,7 +2,7 @@ class WelcomeController < ApplicationController
 
   # respond_to :html
   def index
-    @posts = Post.all
+    @posts = Post.all.order(created_at: :desc)
     # respond_with(@posts)
 
     @testimonials = Testimonial.all
